@@ -74,9 +74,9 @@ class AddPlayerView(PlayerView):
                 ),
                 "sex": WidgetChoice("Sexe (M ou F): ", "Le sexe doit être M ou F", ["M", "F"]),
                 "rank": WidgetIntRange(
-                    "Classement (0 si non classé): ",
+                    "Classement: ",
                     "Le classement doit être > 0",
-                    min=0,
+                    min=1,
                     max=1000000,
                 ),
             },
